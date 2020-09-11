@@ -85,7 +85,7 @@ void draw()
  stroke((int)(Math.random()*256),(int)(Math.random()*256),(int)(Math.random()*256));
  
   //Bolt 1 (Zeus' left hand, on our right)
- while (endX >= 0 && endX <= 300){ 
+ while (endX >= 1 && endX <= 300){ 
     endX = startX + (int)(Math.random() * 70);
     endY = startY + (int)(Math.random() * 40) - 10;
     line(startX, startY, endX, endY);
@@ -94,7 +94,7 @@ void draw()
    }
    
   //Bolt 2 (Zeus' right hand, on our left)
-  while (endA >= 0 && endA <= 300){ 
+  while (endA >= 1 && endA <= 300){ 
     endA = startA - (int)(Math.random() * 70);
     endB = startB - (int)(Math.random() * 40) - 10;
     line(startXb, startYb, endXb, endYb);
