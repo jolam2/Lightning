@@ -1,7 +1,7 @@
 
 int startX = 185;
 int startY = 180;
-int endX = 115;
+int endX = 299;
 int endY = 180;
 
 
@@ -94,7 +94,7 @@ void draw()
    }
    
   //Bolt 2 (Zeus' right hand, on our left)
-  while (endA >= 0 && endA <= 300){ 
+  while (endA >= 1 && endA <= 300){ 
     endA = startA - (int)(Math.random() * 70);
     endB = startB - (int)(Math.random() * 40) - 10;
     line(startXb, startYb, endXb, endYb);
