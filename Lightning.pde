@@ -1,16 +1,16 @@
-//Lightning bolt 1
+
 int startX1 = 185;
 int startY1 = 180;
 int endX1 = 115;
 int endY1 = 180;
 
-//Lightning bolt 2
+
 int startX2 = 115;
 int startY2 = 180;
 int endX2 = 0;
 int endY2 = 100;
 
-//Zeus' hair circles
+
 int circX = 120;
 int circY = 110;
 
