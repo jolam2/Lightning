@@ -1,16 +1,16 @@
-
+//Lightning bolt 1
 int startX1 = 185;
 int startY1 = 180;
 int endX1 = 115;
 int endY1 = 180;
 
-
+//Lightning bolt 2
 int startX2 = 115;
 int startY2 = 180;
 int endX2 = 0;
 int endY2 = 100;
 
-
+//Zeus' hair circles
 int circX = 120;
 int circY = 110;
 
@@ -27,7 +27,7 @@ void setup()
     rect(165,200,10,45);
     quad(130,100,120,100,110,180,115,180);
     quad(165,100,175,100,190,180,185,180);
-    circle(150,100,55);
+    ellipse(150,100,55,55);
     
   //This is for Zeus' toga
     fill(225,225,225);
@@ -43,7 +43,7 @@ void setup()
   while ( circY <= 135){
     circX = circX + 5;
     circY = circY + 5;
-    circle(circX, circY, 15);
+    ellipse(circX, circY, 15, 15);
     }
   
   circX = 180;
@@ -52,7 +52,7 @@ void setup()
   while (circX >= 155){
     circX = circX - 5;
     circY = circY + 5;
-    circle(circX,circY,15);
+    ellipse(circX,circY,15,15);
   }
   
   //This is used for Zeus's hair
@@ -61,12 +61,12 @@ void setup()
   while (circX <= 145){
   circX = circX + 6;
   circY = circY - 5;
-  circle(circX, circY, 15);
+  ellipse(circX, circY, 15, 15);
   }
   while (circX <= 170){
   circX = circX + 6;
   circY = circY + 5;
-  circle(circX, circY, 15);
+  ellipse(circX, circY, 15, 15);
   }
   strokeWeight(10);
   line(120,90,120,110);
