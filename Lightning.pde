@@ -1,14 +1,14 @@
-//Lightning bolt 1
-int startXa = 185;
-int startYa = 180;
-int endXa = 115;
-int endYa = 180;
 
-//Lightning bolt 2
-int startXb = 115;
-int startYb = 180;
-int endXb = 0;
-int endYb = 100;
+int startX = 185;
+int startY = 180;
+int endX = 115;
+int endY = 180;
+
+
+int startA = 115;
+int startB = 180;
+int endA = 0;
+int endB = 100;
 
 //Zeus' hair circles
 int circX = 120;
@@ -85,34 +85,34 @@ void draw()
  stroke((int)(Math.random()*256),(int)(Math.random()*256),(int)(Math.random()*256));
  
   //Bolt 1 (Zeus' left hand, on our right)
- while (endXa >= 0 && endXa <= 300){ 
-    endXa = startX1 + (int)(Math.random() * 70);
-    endYa = startY1 + (int)(Math.random() * 40) - 10;
-    line(startXa, startYa, endXa, endYa);
-    startXa = endXa;
-    startYa = endYa;
+ while (endX >= 0 && endX <= 300){ 
+    endX = startX + (int)(Math.random() * 70);
+    endY = startY + (int)(Math.random() * 40) - 10;
+    line(startX, startY, endX, endY);
+    startX = endX;
+    startY = endY;
    }
    
   //Bolt 2 (Zeus' right hand, on our left)
-  while (endXb >= 0 && endXb <= 300){ 
-    endXb = startXb - (int)(Math.random() * 70);
-    endYb = startYb - (int)(Math.random() * 40) - 10;
+  while (endA >= 0 && endA <= 300){ 
+    endA = startA - (int)(Math.random() * 70);
+    endB = startB - (int)(Math.random() * 40) - 10;
     line(startXb, startYb, endXb, endYb);
-    startXb = endXb;
-    startYb = endYb;
+    startA = endA;
+    startB = endB;
    }
 }
 void mousePressed()
 {
   //resets
-  startXa = 185;
-  startYa = 180;
-  endXa = 115;
-  endYa = 150;
-  startXb = 115;
-  startYb = 180;
-  endXb = 0;
-  endYb = 100;
+  startX = 185;
+  startY = 180;
+  endX = 115;
+  endY = 150;
+  startA = 115;
+  startB = 180;
+  endA = 0;
+  endB = 100;
   
   //Zeus' Angry Eyebrows
   stroke(0,0,0);
