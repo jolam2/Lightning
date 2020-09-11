@@ -1,7 +1,7 @@
 
 int startX = 185;
 int startY = 180;
-int endX = 299;
+int endX = 115;
 int endY = 180;
 
 
