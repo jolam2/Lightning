@@ -7,7 +7,7 @@ int endY = 180;
 
 int startA = 115;
 int startB = 180;
-int endA = 1;
+int endA = 100;
 int endB = 100;
 
 //Zeus' hair circles
@@ -97,7 +97,7 @@ void draw()
   while (endA >= 0 && endA <= 300){ 
     endA = startA - (int)(Math.random() * 70);
     endB = startB - (int)(Math.random() * 40) - 10;
-    line(startXb, startYb, endXb, endYb);
+    line(startA, startB, endA, endB);
     startA = endA;
     startB = endB;
    }
@@ -111,7 +111,7 @@ void mousePressed()
   endY = 150;
   startA = 115;
   startB = 180;
-  endA = 1;
+  endA = 100;
   endB = 100;
   
   //Zeus' Angry Eyebrows
