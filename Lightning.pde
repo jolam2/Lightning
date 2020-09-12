@@ -7,7 +7,7 @@ int endY = 180;
 
 int startA = 115;
 int startB = 180;
-int endA = 0;
+int endA = 1;
 int endB = 100;
 
 //Zeus' hair circles
